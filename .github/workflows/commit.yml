@@ -14,9 +14,10 @@ jobs:
           repository: alexpapworth/github-action-target
           token: ${{ secrets.ACTION_TOKEN }}
       - run: |
-          date > generated.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "generated"
-          git push
+          cat production-version.yaml
+      # - run: |
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git add .
+      #     git commit -m "generated"
+      #     git push
