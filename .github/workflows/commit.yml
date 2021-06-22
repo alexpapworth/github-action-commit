@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: alexpapworth/github-action-target
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTION_TOKEN }}
       - run: |
           date > generated.txt
           git config user.name github-actions
