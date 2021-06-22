@@ -6,6 +6,8 @@ jobs:
   commit:
     name: commit
 
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
         with:
