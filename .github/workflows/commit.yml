@@ -1,0 +1,12 @@
+name: commit
+
+on: [push]
+
+jobs:
+  commit:
+    name: commit
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: alexpapworth/github-action-target
